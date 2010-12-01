@@ -2,26 +2,33 @@
 layout: default
 title: music you love
 ---
-<h2>Preamble</h2>
-<p>etc</p>
+<h2>preamble</h2>
+<p>Welcome to yelyah v5, which looks exactly like yelyah v3!</p>
+<p>If you like minimalist piano, I do a lot of that.</p>
 
 <h2>listen to this</h2>
 
 {% include sample_songs.html %}
 <hr />
 
-<h2>Posts</h2>
+<h2>music</h2>
+
 
 {% for page in paginator.posts %}
-  {% include single_page.html %}
+  {{# include single_page.html }}
 {% endfor %}
 
+{% for page in site.categories.music limit:5 %}
+ {% include single_page.html %}
+{% endfor %}
+
+<!--
 <ul class="posts">
     {% for post in site.posts %}
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title | downcase }}</a></li>
     {% endfor %}
 </ul>
-
+-->
 
 <!-- 
 <h2>elsewhere</h2>

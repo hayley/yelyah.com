@@ -1,17 +1,22 @@
-<h2 class="title"><a href="{{ page.url }}">{{ page.title }}</a></h2> 
+<h3 class="title"><a href="{{ page.url }}">{{ page.title }}</a></h2> 
   <div class="post post-{{ page.id }}">
 
+    <!--
     <p class="author">
       Added by {{ page.author }}
       on {{ page.date | date: '%B %d, %Y' }}
       in {% for category in page.categories %}
        <a href="/{{category | downcase}}.html">{{category}}</a>
       {% endfor %}
+      
     </p>
-
-    <hr />
+    -->
+    
+    
     
     <div class="entrybody">
-      {{ page.content }}
+      <p>{{ page.content | strip_html | truncatewords: 25 }}
+        <a href="{{ page.url }}">more &rarr;</a></p>
     </div>
+    <hr width="25%"/>
   </div>

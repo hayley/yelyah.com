@@ -3,11 +3,13 @@ layout: default
 ---
 
 <h2>{{ page.title }}</h2>
+{% if page.tumblr_embed_source %}
+<p><embed type="application/x-shockwave-flash" src="{{ page.tumblr_embed_source }}&color={{ site.tumblr_embed_color }}" height="27" width="207" quality="best"></embed></p>
+{% endif %}
 <div id="post">
   {{ content }}
 </div>
 
-<hr />
 <div id="related">
   <h3>Related Posts</h3>
   <ul class="posts">
