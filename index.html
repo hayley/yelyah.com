@@ -1,0 +1,25 @@
+---
+layout: default
+title: music you love
+---
+<h2>Preamble</h2>
+<p>etc</p>
+
+<hr />
+
+<h2>Posts</h2>
+
+{% for page in paginator.posts %}
+  {% include single_page.html %}
+{% endfor %}
+
+<ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title | downcase }}</a></li>
+    {% endfor %}
+</ul>
+
+<hr />
+
+<h2>elsewhere</h2>
+<a href="elsewhere.html">yelyah elsewhere</a>
