@@ -15,6 +15,9 @@
     
     
     <div class="entrybody">
+      {% if page.tumblr_embed_source %}
+      <p><embed type="application/x-shockwave-flash" src="{{ page.tumblr_embed_source }}&color={{ site.tumblr_embed_color }}" height="27" width="207" quality="best"></embed></p>
+      {% endif %}
       <p>{{ page.content | strip_html | truncatewords: 25 }}
         <a href="{{ page.url }}">more &rarr;</a></p>
     </div>
