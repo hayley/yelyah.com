@@ -1,83 +1,83 @@
 body {
-	/* font: 0px; */
-	
-	font-family:Helvetica,Arial,sans-serif;
-	font-size:18px;
-	line-height:1.2em;
-	
-	
+  /* font: 0px; */
+  
+  font-family:Helvetica,Arial,sans-serif;
+  font-size:18px;
+  line-height:1.2em;
+  
+  
 }
 
 h1 {
-	font-size:90px;
-	font-weight:bold;
-	letter-spacing:-5px;
-	line-height: 100px;
-	
+  font-size:90px;
+  font-weight:bold;
+  letter-spacing:-5px;
+  line-height: 100px;
+  
 }
 
 h2 {
-	font-size:30px;
-	font-weight:bold;
-	/*letter-spacing:-5px;
-	 line-height: 100px; */
-	
+  font-size:30px;
+  font-weight:bold;
+  /*letter-spacing:-5px;
+   line-height: 100px; */
+  
 }
 
 a {
-	text-decoration:none;
-	color:#406AC1;
+  text-decoration:none;
+  color:#406AC1;
 }
 
 /* haha because I don't know the official way to do this */
 .hack {
-	text-indent: -9999px;
+  text-indent: -9999px;
 }
 
 #footer {
-	font-size: .8em;
+  font-size: .8em;
 }
 
 #sidebar_nav {
-	font-size: 2em;
-	line-height: 1.5em;
-	font-weight: bold;
-	color: #333333;
-	display: block;
+  font-size: 2em;
+  line-height: 1.5em;
+  font-weight: bold;
+  color: #333333;
+  display: block;
 }
 
 #sidebar_nav ul li {
-	border-top: 1px solid #ccc;
+  border-top: 1px solid #ccc;
 }
 
 #sidebar_nav ul li a {
-	display: block;
-	padding-left: 10px;
-	
+  display: block;
+  padding-left: 10px;
+  
 }
 
 #sidebar_nav a:hover {
-	background: #308000;
-	color: #fff;
+  background: #308000;
+  color: #fff;
 }
 
 #sidebar_nav ul li.first {
-	border: none;
+  border: none;
 }
 
 
 /*
 
 .sidebar_nav {
-	font-size: 2em;
-	font-weight: bold;
-	color: #333333;
+  font-size: 2em;
+  font-weight: bold;
+  color: #333333;
 }
 
 
 
 .sidebar_nav ul li { 
-	background: #30800;
+  background: #30800;
 }
 #sidebar ul li.about a.first:hover, #sidebar ul li.about a.first.hover {master-1...04519.css (line 1)
 background:#308000 none repeat scroll 0 0;
@@ -85,10 +85,10 @@ background:#308000 none repeat scroll 0 0;
 
 /* FROM 960 TEXT.CSS */
 hr {
-	border: 0 #ccc solid;
-	border-top-width: 1px;
-	clear: both;
-	height: 0;
+  border: 0 #ccc solid;
+  border-top-width: 1px;
+  clear: both;
+  height: 0;
 }
 
 p,
@@ -106,9 +106,9 @@ pre,
 table,
 address,
 fieldset {
-	margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 li {
-	list-style-type: none;
+  list-style-type: none;
 }
