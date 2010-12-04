@@ -112,3 +112,7 @@ fieldset {
 li {
   list-style-type: none;
 }
+
+#samplesongs span {
+  vertical-align: 30%; /* this just seems to be where it looks like it's center aligned with the embed */
+}
