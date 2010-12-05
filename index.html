@@ -15,11 +15,6 @@ title: music you love
 
 <h2>music</h2>
 
-
-{% for page in paginator.posts %}
-  {{# include single_page.html }}
-{% endfor %}
-
 {% for page in site.categories.music limit:5 %}
  {% include single_page.html %}
 {% endfor %}
