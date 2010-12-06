@@ -6,6 +6,10 @@ layout: default
 {% if page.tumblr_audio_file %}
 <p><embed type="application/x-shockwave-flash" src="http://t.yelyah.com/swf/audio_player.swf?audio_file={{ page.tumblr_audio_file }}&color={{ site.tumblr_embed_color }}" height="27" width="207" quality="best"></embed></p>
 {% endif %}
+
+{% if page.mp3 %}
+<p><a href="{{ page.mp3 }}">{{ page.title }}</a></p>
+{% endif %}
 <div id="post">
   {{ content }}
 </div>
