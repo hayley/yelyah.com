@@ -1,6 +1,7 @@
 require 'rubygems'
 require 'rest_client'
 require 'yaml'
+require 'highline/import'
 
 base_path = "/Users/hayley/Dropbox/_music/"
 
@@ -32,13 +33,15 @@ audio_filename = title << ".mp3"
 audio_file = File.join(base_path, audio_filename)
 
 if !@tumblr_email
-  print "what is your tumblr email address? "
-  @tumblr_email = gets.chomp
+  #print "what is your tumblr email address? "
+  #@tumblr_email = gets.chomp
+  @tumblr_email = ask("tumblr email: ") { |q| q.echo = true }
 end
 
 if !@tumblr_password
-  print "what is your password? "
-  @tumblr_password = gets.chomp
+  #print "what is your password? "
+  #@tumblr_password = gets.chomp
+  @tumblr_password = ask("password: ") { |q| q.echo = "*" }
 end
 
 # PRINT CONFIRMATION HERE
