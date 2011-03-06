@@ -15,6 +15,9 @@ require 'httparty'
 # and load the script again
 # repeat the process for every block of 50 that you need
 
+# if you want just the titles (slugs) and their mp3 links, run this:
+# @posts.each { |post| puts post['slug'], post['audio_player'].match(/audio_file=(.+)&/)[1] };0
+
 # if you haven't already set @posts, this line will give you the 5 most recent
 @posts ||= HTTParty.get('http://t.yelyah.com/api/read?filter=none&type=audio&num=5')['tumblr']['posts']['post']
 
